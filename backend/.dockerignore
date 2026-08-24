@@ -1,0 +1,10 @@
+copiartarget/
+build/
+.git/
+.idea/
+*.iml
+.env
+.vscode/
+*.log
+⚠ CUIDADO
+Nunca suba senha, chave de banco ou token no código. Confirme que existe um .gitignore listando o arquivo .env, se ele existir no projeto.
