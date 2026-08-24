@@ -1,6 +1,6 @@
 import type { Categoria, Veiculo, Cliente, Seguro, Locacao, Multa, Manutencao } from './types';
 
-const BASE = 'http://localhost:8087/api';
+const BASE = `${import.meta.env.VITE_API_URL || 'http://localhost:8087'}/api`;
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(`${BASE}${path}`);
